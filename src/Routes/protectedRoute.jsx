@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { Outlet ,Navigate} from 'react-router'
 import { MyStore } from '../Context/MyContext'
 
-const protectedRoute = () => {
+const ProtectedRoute = () => {
      let{loggedIn}=useContext(MyStore);
        if(!loggedIn){
        return  <Navigate to="/"/>;
@@ -15,4 +15,4 @@ const protectedRoute = () => {
   )
 }
 
-export default protectedRoute
+export default ProtectedRoute
