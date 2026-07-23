@@ -6,7 +6,7 @@ import StorySection from '../components/AboutCom/StorySection'
 import ValueSection from '../components/AboutCom/ValueSection'
 import TeamSection from '../components/AboutCom/TeamSection'
 import CTA from '../components/AboutCom/CTA'
-import Bottom from '../components/AboutCom/bottom'
+import Bottom from '../components/AboutCom/Bottom'
 const About = () => {
   return (
     <div className='bg-[#0f111a]'>

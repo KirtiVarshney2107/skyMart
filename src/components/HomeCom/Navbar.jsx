@@ -71,7 +71,7 @@ const Navbar = () => {
         {/* Cart */}
         <div className="relative cursor-pointer">
           <FaShoppingCart    onClick={() => setIsCartOpen(true)}
-    className="cursor-pointer" className="text-xl" />
+    className="cursor-pointer text-xl" />
 
           <span className="absolute -top-2 -right-2 bg-lime-400 text-black rounded-full w-5 h-5 flex justify-center items-center text-xs font-bold">
             {cartItems.length}
