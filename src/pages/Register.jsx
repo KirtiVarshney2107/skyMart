@@ -101,7 +101,10 @@ const Register = () => {
             {/* Password */}
 
             <div className="relative">
-
+              <Lock
+            className="absolute left-4 top-1/2 -translate-y-1/2 text-zinc-500"
+            size={20}
+          />
               
 
               <input   {...register("password",{

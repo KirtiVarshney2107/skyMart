@@ -1,6 +1,9 @@
 import {NavLink} from "react-router";
-
+import { useContext } from "react";
+import { MyStore } from "../../Context/MyContext";
 const Hero = () => {
+    let {loggedIn,setLoggedIn,cartItems,setIsCartOpen} = useContext(MyStore);
+  
   return (
     <section className="max-w-7xl mx-auto  border border-gray-600 rounded-3xl px-10 py-12 flex justify-between items-center">
 
@@ -14,7 +17,7 @@ const Hero = () => {
         <h1 className="text-6xl font-bold mt-4 leading-tight">
           Welcome back,
           <br />
-          <span className="text-lime-400">Kirti!</span>
+          <span className="text-lime-400">{loggedIn.fullName}</span>
         </h1>
 
         <p className="text-gray-400 mt-6">
